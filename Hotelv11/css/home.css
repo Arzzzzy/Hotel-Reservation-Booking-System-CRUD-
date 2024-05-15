@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cookie&family=Poppins:wght@600&display=swap');
+
+:root {
+    --bg-text-shadow: 0 2px 4px rgb(13 0 77 / 8%), 0 3px 6px rgb(13 0 77 / 8%), 0 8px 16px rgb(13 0 77 / 8%);
+    --bg-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.621);
+}
+*::-webkit-scrollbar{
+    width: .4rem;
+}
+*::-webkit-scrollbar-track{
+    background: rgb(6, 6, 44);
+}
+*::-webkit-scrollbar-thumb{
+    background: #646464;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: var(--bg-text-shadow); 
+}
+
+
+
+nav{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(145, 230, 112, 0.737), rgba(0, 255, 0, 0.671));
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    /* box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.386); */
+}
+
+
+nav ul{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    color: black;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+ul li{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+
+ul li:hover::after{
+    content: "";
+    position: absolute;
+    display: flex;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    /* display: none; */
+    transition: ease 2s;
+}
+
+ul li a:hover{
+    color: black;
+}
+
+.logo {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.logo p {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(66, 68, 74);
+    text-shadow: var(--bg-text-shadow);
+}
+
+.highlight {
+    color: #147900ef; 
+    font-weight: bold; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-stroke: 1px #51ff00e1;
+
+}
+
+#firstsection {
+    height: 100vh;
+    background-image: url('greenhotel.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    z-index: 2000;
+}
+
+
+#firstsection .welcomeline{
+    position: absolute; 
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#firstsection .welcometag {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    line-height: 80px;
+    padding: 5px;
+    color: rgba(238, 255, 0, 0.849);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); 
+}
+
+
+/* roombookcss */
+
+#guestdetailpanel{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.558);
+    position: fixed;
+    z-index: 10000;
+}
+
+.logoutbtn{
+    height: 20px;
+    width: 200px;
+    background-color: rgba(216, 19, 19, 0.804);
+    border-radius: 8px;
+}
+
+
+#contactus{
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 100px;
+}
+
+#contactus .social{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contactus i{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#contactus .createdby{
+    color: white;
+}
+
+/* responsive stuff */
+
+@media(max-width: 30rem){
+    nav{
+        justify-content: center;
+        position: relative;
+        background-color: #adf8968c;
+    }
+    nav ul{
+        display: none;
+    }
+    #firstsection{
+        height: 50vh;
+        text-align: center;
+    }
+    #firstsection .welcomeline{
+        height: 50vh;
+        
+    }
+    #firstsection .welcometag{
+        text-align: center;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    
+    #contactus{
+        padding: 0 30px;
+    }
+}

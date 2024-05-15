@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cookie&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400&display=swap');
+
+:root {
+    --bg-text-shadow: 0 2px 4px rgb(13 0 77 / 8%), 0 3px 6px rgb(13 0 77 / 8%), 0 8px 16px rgb(13 0 77 / 8%);
+    --bg-box-shadow: 0px 0px 20px 6px rgba(8, 8, 15, 0.31);
+}
+*::-webkit-scrollbar{
+    width: .4rem;
+}
+*::-webkit-scrollbar-track{
+    background: rgb(6, 6, 44);
+}
+*::-webkit-scrollbar-thumb{
+    background: #646464;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* text-shadow: var(--bg-text-shadow); */
+}
+
+.addroomsection {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.863);
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Optional padding to create some space around the button */
+    z-index: 100;
+}
+
+.addroom button {
+    margin-left: auto; /* Push the button to the right */
+}
+
+
+
+
+.addstaffsection{
+    height: 60px;
+    width: 100%;
+    background-color:  rgba(0, 0, 0, 0.863);
+    position:fixed;
+    /* display: flex; */
+    z-index: 100;
+    
+}
+
+.addstaffsection form{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.addstaffsection form label{
+    color: white;
+}
+
+.addstaffsection form select{
+    width: 300px;
+}
+
+.addstaffsection form input{
+    width: 300px;
+}
+
+
+/*DASHBOARD/ROOM CSS DITOY*/
+.room{
+    display: flex;
+    position: relative;
+    top: 60px;
+    height: 85vh;
+    overflow-y: scroll;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.roombox{
+    height: 230px;
+    width: 230px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #000000ad;
+    text-shadow: var(--bg-text-shadow);
+    /*border-radius: 10px;*/
+}
+
+.roomboxsuperior{
+    background-color:rgba(81, 202, 48, 0.897)
+}
+
+
