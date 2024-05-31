@@ -1,7 +1,7 @@
 # Hotel-Booking-System
 This project implements a comprehensive hotel booking system with separate customer and admin login functionalities.
 
-Customer Login:
+## Customer Login:
 -Users can register for accounts to manage bookings.
 -Secure login process for booking rooms.
 
